@@ -4,6 +4,7 @@ require 'pry'
 class Scraper
 
   def self.scrape_index_page(index_url)
+    binding.pry 
     html = File.read(index_url)
     learn_webpage = Nokogiri::HTML(html)
     @student_info = [] 
